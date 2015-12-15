@@ -1,0 +1,1 @@
+when-changed new_mailX.txt cat new_mail.txt >> data.txt
