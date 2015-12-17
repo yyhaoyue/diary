@@ -11,7 +11,8 @@
 
 </head>
 <style>
-
+img.likeordisklike { height: 24px; width: 24px; margin-right: 4px; }
+h4.liketext { color:#F00; display:inline }
 
   .fpath input {
 	border: none;
@@ -43,10 +44,12 @@
     }
 .center {
         display: block;
-        margin: auto;
+	margin-left: 55px;
     }
 
-
+.ltext {
+	align: left;
+}
 
 #slideout {
     position: fixed;
@@ -116,19 +119,57 @@
 <div id="slideout">
     <img src="/res/pencil.png" alt="Write" />
     <div id="slideout_inner">
-                <form action="processingscript.php" method="POST" enctype="multipart/form-data">
+                <form id="myForm" action="processingscript.php" method="post" enctype="multipart/form-data">
 
             <textarea id="field1" name="field1" placeholder="Say something..." rows=13 cols=29></textarea>
             <br /><br />
 	    <div class="file_button_container">
-            <input type="file" name="fileToUpload" id="fileToUpload" onchange="javascript: document.getElementById ('fileName').value = this.value"/>
+            <input type="file" name="files[]" id="files" multiple="multiple" accept="image/*" />
 	    </div>
-<div class="fpath">
-	    <input type="text" id="fileName" readonly="readonly">
-	    </div>
+<div id="selectedFiles"></div>
             <br /><br />
             <input type="submit" value="submit" id="submit">
         </form>
+
+
+
+	<script>
+	var selDiv = "";
+		
+	document.addEventListener("DOMContentLoaded", init, false);
+	
+	function init() {
+		document.querySelector('#files').addEventListener('change', handleFileSelect, false);
+		selDiv = document.querySelector("#selectedFiles");
+	}
+		
+	function handleFileSelect(e) {
+		
+		if(!e.target.files || !window.FileReader) return;
+		
+		selDiv.innerHTML = "";
+		
+		var files = e.target.files;
+		var filesArr = Array.prototype.slice.call(files);
+		filesArr.forEach(function(f) {
+			if(!f.type.match("image.*")) {
+				return;
+			}
+	
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				var html = "<img src=\"" + e.target.result + "\" height=\"42\" width=\"42\" class='likeordislike'><h4 class='liketext'> </h4>" ;
+				selDiv.innerHTML += html;				
+			}
+			reader.readAsDataURL(f); 
+			
+		});
+		
+		
+	}
+	</script>
+
+
     </div>
 </div>
 
@@ -144,3 +185,10 @@
 
 </div>
 </body>
+<div id="myDiv" >
+<a href="mailto:derekyingyong@gmail.com?subject=Send_Feedback" style="background-color:#99c739;background-image:url(https://imgur.com/clZqdfM.gif);border:1px solid #7ea613;border-radius:3px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:36px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;">Send Feedback</a>
+<br>
+</div>
+<script>
+document.getElementById("myDiv").style.margin = "50px 10px 20px 30px";
+</script>

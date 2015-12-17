@@ -4,33 +4,46 @@
 </div>
 <link rel="stylesheet" href="http://css-spinners.com/css/spinner/throbber.css" type="text/css">
 <?php
-$target_dir = "upload/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$uploadOk = 1;
-$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-if(isset($_POST["submit"])) {
-    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-    if($check !== false) {
-        echo "File is an image - " . $check["mime"] . ".";
-        $uploadOk = 1;
-    } else {
-        echo "File is not an image.";
-        $uploadOk = 0;
-    }
-}
+date_default_timezone_set('America/Los_Angeles');
+$date = date('d:m:h:i:s a', time());
+$valid_formats = array("jpg", "png", "gif", "zip", "bmp");
+$max_file_size = 4800*4800; //100 kb
+$path = "upload/"; // Upload directory
+$count = 0;
 
-if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-        echo "picture ". basename( $_FILES["fileToUpload"]["name"]). " uploaded";
-    }
-if ($target_file == "upload/") {
-echo "-nofile-";
-} else {
-$picturedata = "<img class=\"center fit\" src=\"" . $target_file .  "\"alt=\"text\">";
+if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
+	// Loop $_FILES to exeicute all files
+	foreach ($_FILES['files']['name'] as $f => $name) {     
+	    if ($_FILES['files']['error'][$f] == 4) {
+	        continue; // Skip file if any error found
+	    }	       
+	    if ($_FILES['files']['error'][$f] == 0) {	           
+	        if ($_FILES['files']['size'][$f] > $max_file_size) {
+	            $message[] = "$name is too large!.";
+	            continue; // Skip large files
+	        }
+			elseif( ! in_array(pathinfo($name, PATHINFO_EXTENSION), $valid_formats) ){
+				$message[] = "$name is not a valid format";
+				continue; // Skip invalid file formats
+			}
+	        else{ // No error found! Move uploaded files 
+	            if(move_uploaded_file($_FILES["files"]["tmp_name"][$f], $path . md5(time() . $name) . $name))
+	            $count++; // Number of successfully uploaded file
+		    $picturedata .= "<img class=\"center fit\" src=\"" . $path . md5(time() . $name) . $name .  "\"alt=\"text\">";
+	        }
+	    }
+	}
 }
-$date = date('m/d/Y h:i:s a', time());
+//$picturedata = "<img class=\"center fit\" src=\"" . $target_file .  "\"alt=\"text\">";
+
+
+
+
+
+
 
 if(isset($_POST['field1'])) {
-    $data = "<p> <b> <font color=\"red\">" . $date . "</font> </b> </p>" . "<p>" . $_POST['field1'] . "<br>" . "</p>" . $picturedata ;
+    $data = "<table> <tr> <td> <p class=\"ltext\"> <b> <font color=\"red\">" . date("m/d") . "</td> <td>" . $picturedata . "</font> </b> </p> </td> </tr>" . "<p> </table>" . $_POST['field1'] .  "</p>" . "<hr>" ;
     $data .= file_get_contents('data.txt');
     $ret = file_put_contents('data.txt', $data);
     if($ret === false) {
@@ -44,4 +57,4 @@ else {
    die('no post data to process');
 }
 ?>
-<meta http-equiv="refresh" content="0.1; URL='/#'" />
+<meta http-equiv="refresh" content="10; URL='/#'" />
