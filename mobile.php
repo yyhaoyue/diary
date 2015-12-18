@@ -9,10 +9,17 @@
 </script>
 
 
+<link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
+
 </head>
 <style>
 img.likeordisklike { height: 24px; width: 24px; margin-right: 4px; }
 h4.liketext { color:#F00; display:inline }
+
+
+//table { width:250px;table-layout:fixed; }
+//table tr { height:1em;  }
+//td { overflow:hidden;white-space:nowrap;  }
 
   .fpath input {
 	border: none;
@@ -45,6 +52,9 @@ h4.liketext { color:#F00; display:inline }
 .center {
         display: block;
 	margin-left: 55px;
+	 width: auto;
+    height: 50px;
+    overflow: hidden;
     }
 
 .ltext {
@@ -184,6 +194,7 @@ h4.liketext { color:#F00; display:inline }
 
 
 </div>
+<script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
 </body>
 <div id="myDiv" >
 <a href="mailto:derekyingyong@gmail.com?subject=Send_Feedback" style="background-color:#99c739;background-image:url(https://imgur.com/clZqdfM.gif);border:1px solid #7ea613;border-radius:3px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:36px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;">Send Feedback</a>
