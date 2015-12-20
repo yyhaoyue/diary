@@ -11,6 +11,7 @@ $max_file_size = 4800*4800; //100 kb
 $path = "upload/"; // Upload directory
 $count = 0;
 $numx = 1;
+$mutipletoday = 0;
 
 if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
 	// Loop $_FILES to exeicute all files
@@ -57,12 +58,34 @@ if(isset($_POST['field1'])) {
     $today = date("m/d");
     if( strpos(file_get_contents("./data.txt"),$today) !== true) {
 $str=file_get_contents('data.txt');
-$str=str_replace($today, "",$str);
+//$str=str_replace("<div class=\"card\">
+//        <div class=\"card-header\">" . $today . 
+//        "</div><div class=\"card-content\">
+//        <div class=\"card-content-inner\">", "",$str);
+
 file_put_contents('data.txt', $str);
 $hr = "";
+$mutipletoday = 1;
 
 }
-    $data = "<table> <tr> <td> <p class=\"ltext\"> <b> <font color=\"red\">" . $today . "</td> <td>" . $picturedata . "</font> </b> </p> </td> </tr>" . "<p> </table>" . $_POST['field1'] .  "</p>" . $hr ;
+ //   	if($mutipletoday == "1") {
+//	$data = "<div class=\"card\">
+//    	<div class=\"card-header\">" . $today . 
+//	"</div><div class=\"card-content\">
+//        <div class=\"card-content-inner\">
+//	<table> <tr> <td> " . "</td> <td>" . $picturedata . " </td> <td valign=\"top\">" . nl2br($_POST['field1']) . "</td></tr>" . "</table>"
+//	 . $hr ;
+//} else {
+ $data = "<div class=\"card\">
+        <div class=\"card-header\">" . $today . 
+        "</div><div class=\"card-content\">
+        <div class=\"card-content-inner\">
+        <table> <tr> <td> " . "</td> <td>" . $picturedata . " </td> <td valign=\"top\">" . nl2br($_POST['field1']) . "</td></tr>" . "</table>
+   </div>
+</div>
+</div>"
+. $hr . $_POST['lock'];
+//}
     $data .= file_get_contents('data.txt');
     $ret = file_put_contents('data.txt', $data);
     if($ret === false) {
@@ -75,5 +98,12 @@ $hr = "";
 else {
    die('no post data to process');
 }
+
+
+
+    if(isset($_POST["lock"]))
+     {
+       echo "testvariabel has been set!";
+     }
 ?>
-<meta http-equiv="refresh" content="0.2; URL='/#'" />
+<meta http-equiv="refresh" content="10; URL='/#'" />

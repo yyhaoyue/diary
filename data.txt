@@ -1,1 +1,55 @@
-<table> <tr> <td> <p class="ltext"> <b> <font color="red">12/17</td> <td><a href='upload/09bac58ee4cfc3fac0a2b5faeed5810dstock-photo-road-through-landscape-road-and-car-travel-scenic-and-sunset-road-travel-concept-car-travel-321745829.jpg' data-lightbox="17:12:05:41:54 pm"><img src="upload/09bac58ee4cfc3fac0a2b5faeed5810dstock-photo-road-through-landscape-road-and-car-travel-scenic-and-sunset-road-travel-concept-car-travel-321745829.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><a href='upload/586b22ff79fe336c580968dd6c19e768stock-photo-seaside-villa-italy-226917691.jpg' data-lightbox="17:12:05:41:54 pm"><img src="upload/586b22ff79fe336c580968dd6c19e768stock-photo-seaside-villa-italy-226917691.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><br><a href='upload/7731b3b9908ec359ff5741177966bf67stock-photo-colorful-hot-air-balloons-flying-over-the-mountain-120085894.jpg' data-lightbox="17:12:05:41:54 pm"><img src="upload/7731b3b9908ec359ff5741177966bf67stock-photo-colorful-hot-air-balloons-flying-over-the-mountain-120085894.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><a href='upload/1f648ddf21e16b6bd12e2f9e8662fe3eimages (1).jpg' data-lightbox="17:12:05:41:54 pm"><img src="upload/1f648ddf21e16b6bd12e2f9e8662fe3eimages (1).jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><a hidden href='upload/0f9676737f27ceae968becf2b17b68bfimages.jpg' data-lightbox="17:12:05:41:54 pm"><img hidden src="upload/0f9676737f27ceae968becf2b17b68bfimages.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><a hidden href='upload/ac20f2d6e8b2bcf4dc8bf099d5ac1cd87dd84d70-768b-492b-88f7-a6c70f2db2e9.jpg' data-lightbox="17:12:05:41:54 pm"><img hidden src="upload/ac20f2d6e8b2bcf4dc8bf099d5ac1cd87dd84d70-768b-492b-88f7-a6c70f2db2e9.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a></font> </b> </p> </td> </tr><p> </table>rtfgvhbn</p><table> <tr> <td> <p class="ltext"> <b> <font color="red">12/16</td> <td><a href='upload/c1d0c0a8cf225319a04ec6e1f339b712photo.jpg' data-lightbox="17:12:05:37:38 pm"><img src="upload/c1d0c0a8cf225319a04ec6e1f339b712photo.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><a href='upload/f018df408a68354f8bd300782b563b79channels4_banner.jpg' data-lightbox="17:12:05:37:38 pm"><img src="upload/f018df408a68354f8bd300782b563b79channels4_banner.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><br><a href='upload/177f8eec3606b9d382c3d67913a07667Mango-Dices1web4-100x100.jpg' data-lightbox="17:12:05:37:38 pm"><img src="upload/177f8eec3606b9d382c3d67913a07667Mango-Dices1web4-100x100.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><a href='upload/0594f9d26acaf30abdbef04d97bb3eeadownload.jpg' data-lightbox="17:12:05:37:38 pm"><img src="upload/0594f9d26acaf30abdbef04d97bb3eeadownload.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a></font> </b> </p> </td> </tr><p> </table>TEST</p>
+<div class="card">
+        <div class="card-header">12/19</div><div class="card-content">
+        <div class="card-content-inner">
+        <table> <tr> <td> </td> <td> </td> <td valign="top">Say something...</td></tr></table>
+   </div>
+</div>
+</div><div class="card">
+        <div class="card-header">12/18</div><div class="card-content">
+        <div class="card-content-inner">
+        <table> <tr> <td> </td> <td> </td> <td valign="top">Say something...</td></tr></table>
+   </div>
+</div>
+</div><div class="card">
+        <div class="card-header">12/18</div><div class="card-content">
+        <div class="card-content-inner">
+        <table> <tr> <td> </td> <td><a href='upload/abb447c44f86d7e6726ab81804dbeb6astock-photo-road-through-landscape-road-and-car-travel-scenic-and-sunset-road-travel-concept-car-travel-321745829.jpg' data-lightbox="18:12:07:28:46 pm"><img src="upload/abb447c44f86d7e6726ab81804dbeb6astock-photo-road-through-landscape-road-and-car-travel-scenic-and-sunset-road-travel-concept-car-travel-321745829.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><a href='upload/c96b03385c4157f27b31176b48bf1a6estock-photo-seaside-villa-italy-226917691.jpg' data-lightbox="18:12:07:28:46 pm"><img src="upload/c96b03385c4157f27b31176b48bf1a6estock-photo-seaside-villa-italy-226917691.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><br><a href='upload/1041516505647707cdd9a012bedbdf9bstock-photo-colorful-hot-air-balloons-flying-over-the-mountain-120085894.jpg' data-lightbox="18:12:07:28:46 pm"><img src="upload/1041516505647707cdd9a012bedbdf9bstock-photo-colorful-hot-air-balloons-flying-over-the-mountain-120085894.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><a href='upload/a3ed0f5ed3d3512c60d3221efd0602cdphoto.jpg' data-lightbox="18:12:07:28:46 pm"><img src="upload/a3ed0f5ed3d3512c60d3221efd0602cdphoto.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a> </td> <td valign="top">Say something...</td></tr></table>
+   </div>
+</div>
+</div><div class="card">
+        <div class="card-header">12/18</div><div class="card-content">
+        <div class="card-content-inner">
+        <table> <tr> <td> </td> <td> </td> <td valign="top">vuyibuonlkSay something...</td></tr></table>
+   </div>
+</div>
+</div><div class="card">
+        <div class="card-header">12/18</div><div class="card-content">
+        <div class="card-content-inner">
+        <table> <tr> <td> </td> <td> </td> <td valign="top">6fyigul</td></tr></table>
+   </div>
+</div>
+</div><div class="card">
+        <div class="card-header">12/18</div><div class="card-content">
+        <div class="card-content-inner">
+        <table> <tr> <td> </td> <td><a href='upload/9effff600cb0a550ab8347132c85f4c1stock-photo-seaside-villa-italy-226917691.jpg' data-lightbox="18:12:07:12:22 pm"><img src="upload/9effff600cb0a550ab8347132c85f4c1stock-photo-seaside-villa-italy-226917691.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><a href='upload/89b8d397eb33d85657276217ce64cf72stock-photo-colorful-hot-air-balloons-flying-over-the-mountain-120085894.jpg' data-lightbox="18:12:07:12:22 pm"><img src="upload/89b8d397eb33d85657276217ce64cf72stock-photo-colorful-hot-air-balloons-flying-over-the-mountain-120085894.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><br><a href='upload/5f26fa6e38505c03b1618867d8aed250photo.jpg' data-lightbox="18:12:07:12:22 pm"><img src="upload/5f26fa6e38505c03b1618867d8aed250photo.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a> </td> <td valign="top">Say something...</td></tr></table>
+   </div>
+</div>
+</div><div class="card">
+        <div class="card-header">12/18</div><div class="card-content">
+        <div class="card-content-inner">
+        <table> <tr> <td> </td> <td> </td> <td valign="top">Say something...</td></tr></table>
+   </div>
+</div>
+</div><div class="card">
+        <div class="card-header">12/18</div><div class="card-content">
+        <div class="card-content-inner">
+        <table> <tr> <td> </td> <td><a href='upload/be6d1fb656031aa1d278adbc5b2d186astock-photo-road-through-landscape-road-and-car-travel-scenic-and-sunset-road-travel-concept-car-travel-321745829.jpg' data-lightbox="18:12:06:11:09 pm"><img src="upload/be6d1fb656031aa1d278adbc5b2d186astock-photo-road-through-landscape-road-and-car-travel-scenic-and-sunset-road-travel-concept-car-travel-321745829.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><a href='upload/3242e1e7394a63fc0f9bd7bc0bf8a080stock-photo-seaside-villa-italy-226917691.jpg' data-lightbox="18:12:06:11:09 pm"><img src="upload/3242e1e7394a63fc0f9bd7bc0bf8a080stock-photo-seaside-villa-italy-226917691.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><br><a href='upload/686b8cfe0a8478d6a2909195b697047fstock-photo-colorful-hot-air-balloons-flying-over-the-mountain-120085894.jpg' data-lightbox="18:12:06:11:09 pm"><img src="upload/686b8cfe0a8478d6a2909195b697047fstock-photo-colorful-hot-air-balloons-flying-over-the-mountain-120085894.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a><a href='upload/bce663abe80331410047f84bafef197aphoto.jpg' data-lightbox="18:12:06:11:09 pm"><img src="upload/bce663abe80331410047f84bafef197aphoto.jpg"alt="text" height="42" width="42" class='likeordislike'><h4 class='liketext'></h4></a> </td> <td valign="top">Say something...</td></tr></table>
+   </div>
+</div>
+</div><div class="card">
+        <div class="card-header">12/17</div><div class="card-content">
+        <div class="card-content-inner">
+        <table> <tr> <td></td> <td></td> <td valign="top">Example Example Example Example</td></tr></table>
+   </div>
+</div>
+</div>

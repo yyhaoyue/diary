@@ -1,205 +1,129 @@
-<head>
-<meta name = "viewport"  content = "initial-scale = 1.0, user-scalable = no">
-
-<script type="text/javascript">
-  <!--
-  if (screen.width >= 800) {
-    window.location = "/index.php";
-  }
-</script>
-
-
-<link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
-
-</head>
-<style>
+<!DOCTYPE html>
+<html>
+  <head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+	<style>
 img.likeordisklike { height: 24px; width: 24px; margin-right: 4px; }
 h4.liketext { color:#F00; display:inline }
 
-
-//table { width:250px;table-layout:fixed; }
-//table tr { height:1em;  }
-//td { overflow:hidden;white-space:nowrap;  }
-
-  .fpath input {
-	border: none;
-	border-color: transparent;
-	background: transparent;
-}
-
-  .file_button_container,
-  .file_button_container input {
-       height: 47px;
-       width: 47px;
-   }
-
-   .file_button_container {
-       background: transparent url(res/Button.png) left top no-repeat;
-       background-size: 40px auto; 
-	font-size:16px;
- }
-
-   .file_button_container input {
-       opacity: 0;
-   }
-
-
-
-.fit {
-        max-width: 90%;
-        max-height: 90%;
-    }
-.center {
-        display: block;
-	margin-left: 55px;
-	 width: auto;
-    height: 50px;
+iframe[seamless]{
+    background-color: transparent;
+    border: 0px none transparent;
+    padding: 0px;
     overflow: hidden;
-    }
-
-.ltext {
-	align: left;
 }
-
-#slideout {
-    position: fixed;
-    top: 40px;
-    left: 0;
-    width: 35px;
-    padding: 12px 0;
-    text-align: center;
-    background: #EEEEEE;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    -webkit-border-radius: 0 5px 5px 0;
-    -moz-border-radius: 0 5px 5px 0;
-    border-radius: 0 5px 5px 0;
-}
-#slideout_inner {
-    position: fixed;
-    top: 40px;
-    left: -300px;
-    background: #EEEEEE;
-    width: 250px;
-    padding: 25px;
-    height: 300px;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    text-align: left;
-    -webkit-border-radius: 0 0 5px 0;
-    -moz-border-radius: 0 0 5px 0;
-    border-radius: 0 0 5px 0;
-}
-#slideout_inner textarea {
-    width: 250px;
-    height: 100px;
-    margin-bottom: 6px;
-}
-#slideout:hover {
-    left: 250px;
-}
-#slideout:hover #slideout_inner {
-    left: 0;
-}
-
-
-
-    #container{
-        width: 250px;
-        margin: 0 auto;
-    }
-    input{
-        width: 250px;
-        height: 25px;
-        font-size:18px;
-        -webkit-border-radius: 5px;
-    }
-    input#submit{
-        width: 80px;
-        height: 30px;
-    }
 
 </style>
-
-<div id="container">
-<div id="slideout">
-    <img src="/res/pencil.png" alt="Write" />
-    <div id="slideout_inner">
-                <form id="myForm" action="processingscript.php" method="post" enctype="multipart/form-data">
-
-            <textarea id="field1" name="field1" placeholder="Say something..." rows=13 cols=29></textarea>
-            <br /><br />
-	    <div class="file_button_container">
-            <input type="file" name="files[]" id="files" multiple="multiple" accept="image/*" />
-	    </div>
-<div id="selectedFiles"></div>
-            <br /><br />
-            <input type="submit" value="submit" id="submit">
-        </form>
-
-
-
-	<script>
-	var selDiv = "";
-		
-	document.addEventListener("DOMContentLoaded", init, false);
-	
-	function init() {
-		document.querySelector('#files').addEventListener('change', handleFileSelect, false);
-		selDiv = document.querySelector("#selectedFiles");
-	}
-		
-	function handleFileSelect(e) {
-		
-		if(!e.target.files || !window.FileReader) return;
-		
-		selDiv.innerHTML = "";
-		
-		var files = e.target.files;
-		var filesArr = Array.prototype.slice.call(files);
-		filesArr.forEach(function(f) {
-			if(!f.type.match("image.*")) {
-				return;
-			}
-	
-			var reader = new FileReader();
-			reader.onload = function (e) {
-				var html = "<img src=\"" + e.target.result + "\" height=\"42\" width=\"42\" class='likeordislike'><h4 class='liketext'> </h4>" ;
-				selDiv.innerHTML += html;				
-			}
-			reader.readAsDataURL(f); 
-			
-		});
-		
-		
-	}
-	</script>
-
-
+<link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+   <div class="popup popup-about">
+    <div class="content-block">
+      <p>Add Picture</p>
+      <p>Pick From Phone</p>
+        <iframe seamless='seamless' src="jQuery-File-Upload-9.11.2/index.html" height="200"></iframe>        
+	<div class="col-50"><a href="#" class="close-popup button button-big button-fill color-blue">Alright.</a></div>
     </div>
-</div>
+  </div>
 
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p>Left panel content goes here</p>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding">Diary</div>
+            <div class="right">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content infinite-scroll" data-distance="50">
+              <div class="content-block-title">Welcome To Diary</div>
 
-<body style="background-color:#1abc9c;">
-
-<div id="data">
 <?php $myfilename="data.txt" ; if(file_exists($myfilename)){ echo file_get_contents($myfilename); } ?>
-</div>
 
 
-
-
-</div>
+                
+             
+		 
+              
+              <div class="content-block-title">Tools</div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="about.php" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner"> 
+                          <div class="item-title">Wipe</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="services.html" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">[placeholder]</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="form.html" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Diary Settings</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+              <div class="content-block-title">Side panels</div>
+              <div class="content-block">
+                <div class="row">
+                  <div class="col-50"><a href="#" data-panel="left" class="button open-panel">Left Panel</a></div>
+                  <div class="col-50"><a href="#" data-panel="right" class="button open-panel">Right Panel</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+          <div class="toolbar-inner"><a href="javascript:window.location.reload();" class="link">Refresh</a><a href="WriteDiary.php" class="link">Write</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
 <script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
-</body>
-<div id="myDiv" >
-<a href="mailto:derekyingyong@gmail.com?subject=Send_Feedback" style="background-color:#99c739;background-image:url(https://imgur.com/clZqdfM.gif);border:1px solid #7ea613;border-radius:3px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:36px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;">Send Feedback</a>
-<br>
-</div>
-<script>
-document.getElementById("myDiv").style.margin = "50px 10px 20px 30px";
-</script>
+  </body>
+</html>
